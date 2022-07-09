@@ -1,4 +1,5 @@
 FROM debian:latest
+RUN usermod --password YOUR_PASSWORD
 RUN apt-get update && apt-get install -y python3 && apt-get install -y python3-pip
 RUN pip3 install pyTelegramBotAPI==4.6.0
 RUN apt-get install -y openssh-server ssh
